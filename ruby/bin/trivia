@@ -7,6 +7,10 @@ not_a_winner = false
 
 game = UglyTrivia::Game.new
 
+if ARGV[0]
+  srand ARGV[0].to_i
+end
+
 game.add 'Chet'
 game.add 'Pat'
 game.add 'Sue'
